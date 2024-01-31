@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Background Image</title>
+
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Borel&family=Dancing+Script&family=Dela+Gothic+One&family=Hanalei&family=IBM+Plex+Sans&family=Manrope:wght@300&family=Merriweather&family=Monofett&family=Piedra&family=Poppins:ital,wght@1,300&family=Roboto+Slab&family=Satisfy&family=Ubuntu&family=Varela+Round&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles/Style.css"> -->
+    <style>
+      
+    body {
+      height: 100vh;
+      width: 100vw;
+      font-size: 20px;
+      display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    
+  }
+  * {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      box-sizing: border-box;
+  }
+  /* img{
+    height: 32px;
+    display: flex;
+  
+    align-items: flex-start;
+  
+  } */
+  .logo{
+    float:left;
+  
+    margin-right: 35rem;
+
+  }
+  nav{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content:center;
+  }
+  nav ul{
+    display: flex;
+    float: left;
+    gap: 30px;
+    margin-right: rem;
+    font-weight: 500;
+  }
+  header {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+  }
+  header::after{
+    
+      background: url("./asset/bgc12.png") no-repeat center center/cover;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      
+    }
+    nav ul li:hover {
+      text-decoration: underline;
+      color: rgb(247, 247, 81);
+      font-weight: 900;
+    }
+    li {
+      list-style: none;
+      cursor: pointer;
+    }
+    a {
+      text-decoration: none;
+      color: rgb(247, 247, 81);
+    }
+    
+    .headerBtn button {
+      display: flex;
+      gap: 30px;
+      padding: 10px 30px ;
+      background-color: rgb(240, 88, 95);
+      color: white;
+      border: none;
+      font-weight: 600;
+      margin-right: 40px;
+  
+    }
+    .headerBtn button:hover {
+      background-color: white;
+      color:rgb(240, 88, 95);
+      cursor: pointer;
+      border: 2px solid rgb(240, 88, 95);
+    }
+  
+    section {
+      font-family: "Dela Gothic One", cursive;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: 35px;
+      font-size: 80px;
+      color: rgb(255, 255, 46);
+      margin-bottom: -20px;         
+      font-weight: 400;
+    }
+   .secButton{
+      background-color: rgb(240, 88, 95);
+      color: white;
+      padding: 20px 50px;
+      /* margin-top: 150px; */
+      margin-bottom: 350px;
+      font-size: 20px;
+      font-weight: 600;
+      border: none;
+      
+    }
+    
+    
+    .scrool{
+      display: flex;
+      flex-direction: column;
+      margin-left: 85%;
+      /* margin-top: 100px; */
+      margin-bottom: 0.5%;
+      width: 150px;
+      height: 150px;
+      padding: 5px 5px;
+    }
+  </style>
+  </head>
+  <body>
+    <header>
+      
+      <nav>
+        <div class="logo">
+          <img src="./asset/Logo.jpeg" alt="logo">
+          </div>
+        <ul>
+          
+          <li><a href="Our Menu">Our Menu</a></li>
+          <li><a href="Maps">Maps</a></li>
+          <li><a href="About">About</a></li>
+          <li><a href="Contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="headerBtn">
+        <button>Order</button>
+      </div>
+    </header>
+    <section>
+     <p> Restaurant That <br>
+      Only Serves <br> Delicious Food</p>
+      <button class="secButton">Read Our Menu</button>
+      
+    </section>
+
+      <footer>
+        <img class="scrool" src="./asset/scrool123.png" alt="scrool" />
+      </footer>
+    
+  </body>
+</html>
